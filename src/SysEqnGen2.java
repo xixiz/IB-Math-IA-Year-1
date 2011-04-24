@@ -5,7 +5,6 @@
  * @author Alvin Gao
  */
 
-import java.util.Arrays;
 import java.util.Random;
 import org.jlinalg.Matrix;
 import org.jlinalg.rational.Rational;
@@ -77,9 +76,12 @@ public class SysEqnGen2 {
         int d3 = initValue3 + increment3 * 3;
 
         Rational[][] results = {
-            {Rational.FACTORY.get(a1), Rational.FACTORY.get(b1), Rational.FACTORY.get(c1), Rational.FACTORY.get(d1)},
-            {Rational.FACTORY.get(a2), Rational.FACTORY.get(b2), Rational.FACTORY.get(c2), Rational.FACTORY.get(d2)},
-            {Rational.FACTORY.get(a3), Rational.FACTORY.get(b3), Rational.FACTORY.get(c3), Rational.FACTORY.get(d3)}
+            {Rational.FACTORY.get(a1), Rational.FACTORY.get(b1),
+                     Rational.FACTORY.get(c1), Rational.FACTORY.get(d1)},
+            {Rational.FACTORY.get(a2), Rational.FACTORY.get(b2),
+                     Rational.FACTORY.get(c2), Rational.FACTORY.get(d2)},
+            {Rational.FACTORY.get(a3), Rational.FACTORY.get(b3),
+                     Rational.FACTORY.get(c3), Rational.FACTORY.get(d3)}
         };
 
         return results;
